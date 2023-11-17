@@ -1,0 +1,19 @@
+spring:
+  data:
+    jpa.repositories.enabled: true
+  datasource:
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://dumbo.db.elephantsql.com/eiqeukum?sslmode=require
+    username: eiqeukum
+    password: C2nNHPgGDFI6_gUOUY20Kw_EdO4MJ-3i
+  jpa:
+    hibernate:
+      ddl-auto: update
+      use-new-id-generator-mappings: true
+      generate-ddl: true
+    properties:
+      hibernate:
+        jdbc.lob.non_contextual_creation: true
+        show_sql: true
+        format_sql: true
+        dialect: org.hibernate.dialect.PostgreSQLDialect
